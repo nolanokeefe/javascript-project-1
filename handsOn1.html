@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hands On 1 Exercise</title>
+  </head>
+  <body>
+    <button id="myButton" onClick="changeColor()">
+      Click here to change the background color!
+    </button>
+    <div id="myDiv"></div>
+    <button id="myButton2" onClick="changeText(this)">Change Text</button>
+    <button onclick="displayDate()">Display Date</button>
+    <button id="myTime">Display Time</button>
+    <form name="ageForm" onsubmit="return myAge()">
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" />
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="backgroundcolor.js"></script>
+  </body>
+</html>
