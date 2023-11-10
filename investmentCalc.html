@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Calculator</title>
+    <link rel="stylesheet" href="investmentCalc.css"/>
+  </head>
+  <body>
+    <h1>Investment Calculator</h1>
+    <form name="investmentForm" onsubmit="submitData(); return false" ;>
+      <p>Initial Account Balance: $</p>
+      <input type="text" name="InitialBalance" id="initialBalance" />
+
+      <p>Annual Interest Rate:</p>
+      <input type="text" name="interestRate" id="interestRate" />
+
+      <p>Investment Duration (in months):</p>
+      <input type="text" name="investmentDuration" id="investmentDuration" />
+    </br>
+
+      <p><button type="submit">Calculate your Investment!</button></p>
+    </form>
+
+<div id="investyield">
+   <span id="yield"></span>
+    
+   
+</div>
+<script src="investmentCalc.js"></script>
+
+<div id="errorOutput"></div>
+   
+  </body>
+</html>
